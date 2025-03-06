@@ -1,16 +1,16 @@
-# Backends Service
+# Backends
 
 The backends service provides a means to manage backends which is where computations run. The service allows the creation, update, viewing and deletion of a backend. The service also manages connections to different backends and monitors them as well as securing the connection with mutual TLS. The service also enables the termination of the manager service running on the backend.
 
 A backend can be described as consisting on manager running on the host, along with agent in a virtual machine in a Trusted Execution Environment.
 
-![Backend](img/backend.drawio.png)
+![Backend](../static/img/backend.drawio.png)
 
 ## Creating a Backend
 
 This can be done on the user interface as below:
 
-![New backend](img/ui/new%20backend.png)
+![New backend](../static/img/ui/new%20backend.png)
 
 or by running:
 
@@ -38,7 +38,7 @@ Content-Length: 0
 
 This can be done on the user interface:
 
-![Update Backend](img/ui/update%20backend.png)
+![Update Backend](../static/img/ui/update%20backend.png)
 
 or on curl:
 
@@ -65,7 +65,7 @@ Content-Length: 0
 
 List of backends is viewable on the ui:
 
-![list_backends](img/backends_page.png)
+![list_backends](../static/img/backends_page.png)
 
 This can be done on curl as shown below:
 
@@ -88,7 +88,7 @@ Content-Length: 165
 
 An individual backend can be viewed on ui where it's details such as address, status, ID, certs and information can be acquired. Certs management is also carried out on this page.
 
-![backend](img/backend.png)
+![backend](../static/img/backend.png)
 
 This can be done on curl as below:
 
@@ -142,10 +142,10 @@ On manager the logs will be as follows:
 
 This removes the backend from the database. This can be done by clicking the delete button on the backend's page as shown:
 
-![delete_backend](img/delete_backend_1.png)
+![delete_backend](../static/img/delete_backend_1.png)
 
 Alternatively, the backend can be deleted on the backends list page by clicking the trash icon:
-![delete_backend_2](img/delete_backend_2.png)
+![delete_backend_2](../static/img/delete_backend_2.png)
 
 This can be done on curl as shown below:
 
